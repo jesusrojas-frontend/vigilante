@@ -1,0 +1,19 @@
+/*font-family: 'Muli', sans-serif;
+font-family: 'Rajdhani', sans-serif;*/
+:root{
+	--FuenteP: 'Muli', sans-serif;
+	--FuenteS: 'Rajdhani', sans-serif;
+
+	--colorBack: #151922;
+	--tituloCopy: #41454e;
+	--botones: #ff6158;
+	--imgBack: #f1f1f1;
+	--colorTitle: #272c32;
+	--colorText: #686b70;
+	--carro: #6364d8;
+	--cero: #3939b1;
+	--blogBack: #fafafa;
+	--footerBack: #2f343a;
+	--botonA: #ff9667;
+	--botonB: #ffbd81;
+}
