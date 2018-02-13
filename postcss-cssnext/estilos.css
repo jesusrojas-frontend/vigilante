@@ -17,3 +17,75 @@ font-family: 'Rajdhani', sans-serif;*/
 	--botonA: #ff9667;
 	--botonB: #ffbd81;
 }
+.VigilanteHero{
+	&-header{
+		padding: .5em 3em;
+		background: var(--colorBack);
+		color: black;
+		display: flex;
+		justify-content: space-between;
+		&-logo{
+			align-items: center;
+			display: flex;
+			&-imagen{
+				width: 20%;
+				margin: 0;
+				img{
+					width: 100%;
+				}
+			}
+			&-titulo{
+				color: white;
+				font-family: var(--FuenteP);
+				font-size: 2rem;
+				margin: 0;
+				padding-left: .5em;
+			}
+		}
+		&-collapse{
+			display: flex;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			&-item{
+				margin: .5em;
+				a{
+					padding: 2em;
+					color: white;
+					font-family: var(--FuenteP);
+				}
+				&:nth-child(2){
+					display: flex;
+					align-items: center;
+					border-radius: 10px;
+					overflow: hidden;
+				}
+				&-carro{
+					display: flex;
+					align-items: center;
+					background: var(--carro);
+					color: white;
+					padding: .5em 1em;
+					span:last-child{
+						margin-left: .5em;
+						font-family: var(--FuenteP);
+					}
+				}
+				&-cero{
+					background: var(--cero);
+					padding: .5em 1em;
+					color: white;
+					font-family: var(--FuenteP);
+				}
+				&:last-child{
+					color: white;
+					font-size: 1.5rem;
+				}
+			}
+		}
+		&-navbar{
+			display: none;
+		}
+	}
+}
