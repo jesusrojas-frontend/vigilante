@@ -112,6 +112,9 @@ font-family: 'Rajdhani', sans-serif;*/
 				&:last-child{
 					color: white;
 					font-size: 1.5rem;
+					&:hover{
+						cursor: pointer;
+					}
 				}
 			}
 		}
@@ -237,6 +240,134 @@ font-family: 'Rajdhani', sans-serif;*/
 				font-weight: bold;
 				margin-left: 4em;
 				color: var(--tituloCopy);
+			}
+		}
+	}
+}
+/* ---------- Productos ---------*/
+.VigilanteProductos{
+	padding: 7em 5em;
+	&-header{
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 2em;
+		&-title{
+			font-family: var(--FuenteS);
+			text-transform: uppercase;
+			color: var(--colorTitle);
+			font-weight: bold;
+			width: 40%;
+			font-size: 3rem;
+		}
+		&-caption{
+			font-size: 2.2rem;
+			font-family: var(--FuenteS);
+			font-weight: 600;
+			text-transform: uppercase;
+			span{
+				font-size: 1.5rem;
+				color: var(--colorText);
+			}
+
+		}
+		
+	}
+	&-grid{
+		display: grid;
+		grid-template-columns: repeat(5,20%);
+		grid-gap: 60px 10px;
+		grid-auto-flow: column dense;
+		grid-auto-rows: 100px;
+		&-item{
+			display: flex;
+			&:first-child{
+				grid-column: 1/3;
+				grid-row: 1;
+				flex-direction: column;
+			}
+			&:nth-child(2){
+				grid-column: 3/6;
+				grid-row: 2;
+				height: 200px;
+				img{
+					width: 80%;
+				}
+				.VigilanteProductos-grid-item-descripcion-btn{
+					&:after{
+						content: 'ver todas';
+						color: var(--colorTitle);
+					}
+				}
+			}
+			&:nth-child(3){
+				margin-top: 4em;
+				grid-column: 1/4;
+				grid-row: 3/5;
+				.VigilanteProductos-grid-item-descripcion-btn{
+					&:after{
+						content: 'ver todos';
+						color: var(--colorTitle);
+					}
+				}
+
+			}
+			&:last-child{
+				grid-column: 3/6;
+				grid-row: 5/9;
+				.VigilanteProductos-grid-item-imagen{
+					height: 500px;
+				}
+				.VigilanteProductos-grid-item-descripcion-btn{
+					width: 70%;
+					&:after{
+						content: 'pedir servicio';
+						color: var(--colorTitle);
+					}
+				}
+			}
+			&-title{
+				font-family: var(--FuenteS);
+				font-weight: 600;
+			}
+			&-parrafo{
+				font-family: var(--FuenteP);
+				color: var(--colorText);
+			}
+			&-descripcion{
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				&-title{
+					font-family: var(--FuenteS);
+					font-weight: 600;
+					margin: 0;
+				}
+				&-parrafo{
+					font-family: var(--FuenteP);
+					color: var(--colorText);
+
+				}
+				&-btn{
+					width: 60%;
+					&:after{
+						color: var(--colorTitle);
+						font-size: 1.2rem;
+						padding: .3em 2em;
+						width: 20%;
+					}
+				}
+			}
+			&-imagen{
+				width: 80%;
+				background: var(--imgBack);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 200px;
+				&:nth-child(1){
+					height: 300px;
+				}
 			}
 		}
 	}
