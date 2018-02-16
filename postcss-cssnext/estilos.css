@@ -26,6 +26,7 @@ font-family: 'Rajdhani', sans-serif;*/
 	z-index: 1000;
 	width: 100%;
 	height: 40px;
+	z-index: 1;
 	&:after{
 		position: absolute;
 		top: 0;
@@ -35,7 +36,6 @@ font-family: 'Rajdhani', sans-serif;*/
 		transition: .3s;
 		width: 40%;
 		height: 100%;
-		z-index: 0;
 		padding: 0 1em;
 	}
 	&:hover{
@@ -119,7 +119,53 @@ font-family: 'Rajdhani', sans-serif;*/
 			}
 		}
 		&-navbar{
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 100vh;
+			background: #2f343a9e;
+			z-index: 1000;
+			overflow: hidden;
+			padding: 1em 5em;
 			display: none;
+			&-close{
+				position: fixed;
+				right: 7%;
+				top: 6%;
+				color: white;
+				font-size: 1.6rem;
+				transition: .3s;
+				&:hover{
+					cursor: pointer;
+					opacity: .7;
+				}
+			}
+			&-menu{
+				width: 100%;
+				height: 100%;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+				font-family: var(--FuenteP);
+				&-item{
+					margin: .5em;
+					a{
+						padding: 1em;
+						color: white;
+						font-size: 1.5rem;
+						transition: .3s;
+						&:hover{
+							opacity: .7;
+							text-decoration: none;
+						}
+
+					}
+				}
+			}
 		}
 	}
 	/* --------- Copy ----------*/
@@ -587,6 +633,7 @@ font-family: 'Rajdhani', sans-serif;*/
    ---------- Responsive ----------
    ------------------------------*/
 @media screen and (max-width: 1025px){
+	/*-- Hero --*/
 	.VigilanteHero{
 		padding: 1em 3em;
 		&-header{
@@ -663,6 +710,7 @@ font-family: 'Rajdhani', sans-serif;*/
 			}
 		}
 	}
+	/* -- Productos -- */
 	.VigilanteProductos{
 		&-header{
 			&-title{
@@ -729,6 +777,7 @@ font-family: 'Rajdhani', sans-serif;*/
 			}
 		}
 	}
+	/* -- Blog -- */
 	.VigilanteBlog{
 		&-grid{
 			&-post{
@@ -749,6 +798,7 @@ font-family: 'Rajdhani', sans-serif;*/
 	}
 }
 @media screen and (max-width: 500px){
+	/* -- Hero -- */
 	.VigilanteHero{
 		padding: 1em !important;
 		&-header{
@@ -834,6 +884,7 @@ font-family: 'Rajdhani', sans-serif;*/
 			}
 		}
 	}
+	/* -- Productos -- */
 	.VigilanteProductos{
 		padding: 3em 2em;
 		&-header{
@@ -886,6 +937,7 @@ font-family: 'Rajdhani', sans-serif;*/
 			}
 		}
 	}
+	/* -- Blog -- */
 	.VigilanteBlog{
 		padding: 3em 2em;
 		&-grid{
@@ -906,6 +958,7 @@ font-family: 'Rajdhani', sans-serif;*/
 			width: 50%;
 		}
 	}
+	/* -- Footer -- */
 	.VigilanteFooter{
 		&-grid{
 			grid-template-columns: 1fr 1fr;
