@@ -748,3 +748,91 @@ font-family: 'Rajdhani', sans-serif;*/
 		}
 	}
 }
+@media screen and (max-width: 500px){
+	.VigilanteHero{
+		padding: 1em !important;
+		&-header{
+			&-logo{
+				&-imagen{
+					width: 30%;
+				}
+			}
+			&-collapse{
+				&-item{
+					&:first-child{
+						display: none;
+					}
+					&:nth-child(2){
+
+					}
+					&-carro{
+						padding: .3em .5em;
+					}
+					&-cero{
+						padding: .3em .7em;
+					}
+				}
+			}
+		}
+		&-grid{
+			grid-template-columns: repeat(2,1fr);
+			&-column{
+				&:first-child{
+					grid-area: 1 / 1 / 5 / 3;
+				}
+				&:nth-child(2){
+					grid-area: 4 / 1 / 7 / 3;
+				}
+				&:nth-child(3){
+					grid-area: 7 / 1 / 10 / 3;
+				}
+				&:nth-child(4){
+					grid-area: 10 / 1 / 13 / 3;
+				}
+				&:nth-child(5){
+					grid-area: 13 / 1 / 14 / 3;
+				}
+			}
+		}
+		&-copy{
+			padding: 1em 0;
+			border-right: none;
+			&-callToAction{
+				&-title{
+					font-size: 2.5em;
+				}
+				&-btn{
+					width: 61%;
+				}
+			}
+			&-donde,&-cuantas,&-observa{
+				padding: 1.5em;
+			}
+			&-donde{
+				margin-top: 2em;
+				&-caption{
+					font-size: 1.5rem;
+				}
+			}
+			&-cuantas{
+				&-caption{
+					font-size: 1.5rem;
+				}
+			}
+			&-observa{
+				&-caption{
+					font-size: 1.5rem;
+				}
+			}
+			&-leer{
+				display: flex;
+				justify-content: center;
+				width: 100%;
+				&-btn{
+					width: 41%;
+				}
+			}
+		}
+	}
+
+}
