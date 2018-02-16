@@ -26,9 +26,9 @@ body
 					.VigilanteHero-header-collapse-item-cero
 						span 0
 				li.VigilanteHero-header-collapse-item
-					span.fa.fa-bars
-			navbar.VigilanteHero-header-navbar
-				span.fa.fa-times.VigilanteHero-header-navbar-close
+					span.fa.fa-bars#burguer
+			navbar.VigilanteHero-header-navbar#menu
+				span.fa.fa-times.VigilanteHero-header-navbar-close#close
 				ul.VigilanteHero-header-navbar-menu
 					li.VigilanteHero-header-navbar-menu-item
 						a(href="#") Iniciar Sesión
@@ -158,3 +158,5 @@ body
 		.VigilanteFooter-footer
 			span.VigilanteFooter-footer-item &copy; 2018 Vigilante. Todos los derechos reservados.
 			span.VigilanteFooter-footer-item!= "Diseño y Desarrollo por <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a>"
+	script(src="js/jquery.js")
+	script(src="js/app.js")
