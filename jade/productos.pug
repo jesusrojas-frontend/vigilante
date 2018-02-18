@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Vigilante
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,600|Rajdhani:400,600,700" rel="stylesheet">
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	link(rel="stylesheet", href="css/normalize.css")
+	link(rel="stylesheet", href="css/bootstrap.min.css")
+	link(rel="stylesheet", href="css/estilos.css")
+	link(rel="stylesheet", href="css/productos.css")
+	link(rel="stylesheet", href="css/fontawesome-all.css")
+body
+	section.VigilanteHero
+		header.VigilanteHero-header
+			a(href="#").VigilanteHero-header-logo
+				figure.VigilanteHero-header-logo-imagen
+					img(src="img/logo.png", alt="logo")
+				h1.VigilanteHero-header-logo-titulo Vigilante
+			ul.VigilanteHero-header-collapse
+				li.VigilanteHero-header-collapse-item
+					a(href="#") Blog
+				li.VigilanteHero-header-collapse-item
+					a(href="#") Sobre Nosotros
+				li.VigilanteHero-header-collapse-item
+					a(href="#") Mi cuenta
+				li.VigilanteHero-header-collapse-item
+					span.fa.fa-bars#burguer
+			form.VigilanteHero-header-form
+				.VigilanteHero-header-form-group.input-group
+					.VigilanteHero-header-form-group-prepend.input-group-prepend
+						span.fa.fa-search
+					input(type="text", name="", placeholder="Buscar Producto").VigilanteHero-header-form-group-input.form-control
+
+			.VigilanteHero-header-collapse-item.VigilanteHero-header-collapse-item-carrito
+				.VigilanteHero-header-collapse-item-carro
+					span.fas.fa-shopping-cart
+					span Carro
+				.VigilanteHero-header-collapse-item-cero
+					span 0
+			navbar.VigilanteHero-header-navbar#menu
+				span.fa.fa-times.VigilanteHero-header-navbar-close#close
+				ul.VigilanteHero-header-navbar-menu
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="#") Iniciar Sesión
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="#") Registrarse
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="#") Productos
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="#") Quienes Somos
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="#") Contacto
