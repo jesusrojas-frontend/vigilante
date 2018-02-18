@@ -77,33 +77,26 @@ font-family: 'Rajdhani', sans-serif;*/
   content: "\f07a"; }
 
 .btn{
-	font-family: var(--FuenteS);
-	text-transform: uppercase;
-	font-weight: 600;
-	position: relative;
-	overflow: hidden;
-	z-index: 1000;
-	width: 100%;
-	height: 40px;
-	z-index: 1;
-	&:after{
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: '';
-		background: var(--botones);
+	display: grid;
+	padding: 0;
+	&-back{
+		padding: .9em .8rem;
 		transition: .3s;
-		width: 40%;
+		border-radius: .25rem 0 0 .25rem;
+		background: var(--botones);
 		height: 100%;
-		padding: 0 1em;
+		width: 40%;
+	}
+	&-back,&-contenido{
+		grid-area: 1 / 1 / 1 /1;
 	}
 	&:hover{
 		color: white;
-		&:after{
-			width: 90%;
+		.btn-back{
+			width: 100%;
+			border-radius: .25rem;
 		}
 	}
-
 }
 .VigilanteHero{
 	/*---------- Header ----------*/
@@ -280,9 +273,6 @@ font-family: 'Rajdhani', sans-serif;*/
 				color: white;
 				font-size: 1.5rem;
 				width: 40%;
-				&:after{
-					content: 'Comprar Ahora';
-				}
 			}
 		}
 		&-donde{
@@ -320,18 +310,13 @@ font-family: 'Rajdhani', sans-serif;*/
 			display: flex;
 			justify-content: flex-end;
 			&-btn{
-				font-size: 1.3em;
+				font-size: 1.2em;
 				color: white;
-				display: flex;
-				width: 60%;
-				&:after{
-					content: 'Aprender Mas';
-					height: 80%;
+				&-back{
+					height: 40%;
 				}
-				&:hover{
-					&:after{
-						width: 100%;
-					}
+				&-contenido{
+					padding-left: 1em;
 				}
 			}
 
@@ -406,23 +391,11 @@ font-family: 'Rajdhani', sans-serif;*/
 				img{
 					width: 80%;
 				}
-				.VigilanteProductos-grid-item-descripcion-btn{
-					&:after{
-						content: 'ver todas';
-						color: var(--colorTitle);
-					}
-				}
 			}
 			&:nth-child(3){
 				margin-top: 4em;
 				grid-column: 1/4;
 				grid-row: 3/5;
-				.VigilanteProductos-grid-item-descripcion-btn{
-					&:after{
-						content: 'ver todos';
-						color: var(--colorTitle);
-					}
-				}
 
 			}
 			&:last-child{
@@ -430,13 +403,6 @@ font-family: 'Rajdhani', sans-serif;*/
 				grid-row: 5/9;
 				.VigilanteProductos-grid-item-imagen{
 					height: 500px;
-				}
-				.VigilanteProductos-grid-item-descripcion-btn{
-					width: 70%;
-					&:after{
-						content: 'pedir servicio';
-						color: var(--colorTitle);
-					}
 				}
 			}
 			&-title{
@@ -464,11 +430,21 @@ font-family: 'Rajdhani', sans-serif;*/
 				}
 				&-btn{
 					width: 60%;
-					&:after{
-						color: var(--colorTitle);
-						font-size: 1.2rem;
-						padding: .3em 2em;
-						width: 20%;
+					color: var(--colorTitle);
+					font-size: 1.3rem;
+					font-family: var(--FuenteS);
+					font-weight: 600;
+					&-contenido{
+						padding-left: 1em;
+					}
+					&:hover{
+						.VigilanteProductos-grid-item-descripcion-btn{
+							&:hover{
+								.VigilanteProductos-grid-item-descripcion-btn{
+									color: var(--colorText);
+								}
+							}
+						}
 					}
 				}
 			}
