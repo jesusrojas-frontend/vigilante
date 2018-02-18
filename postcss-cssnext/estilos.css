@@ -434,8 +434,11 @@ font-family: 'Rajdhani', sans-serif;*/
 					font-size: 1.3rem;
 					font-family: var(--FuenteS);
 					font-weight: 600;
+<<<<<<< HEAD
 					&-back{
 					}
+=======
+>>>>>>> origin/master
 					&-contenido{
 						padding-top: .2em;
 						padding-left: 1em;
