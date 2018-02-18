@@ -1,0 +1,82 @@
+:root{
+	--FuenteP: 'Muli', sans-serif;
+	--FuenteS: 'Rajdhani', sans-serif;
+
+	--colorBack: #151922;
+	--tituloCopy: #41454e;
+	--botones: #ff6158;
+	--imgBack: #f1f1f1;
+	--colorTitle: #272c32;
+	--colorText: #686b70;
+	--carro: #6364d8;
+	--cero: #3939b1;
+	--blogBack: #fafafa;
+	--footerBack: #2f343a;
+	--botonA: #ff9667;
+	--botonB: #ffbd81;
+}
+.VigilanteHero{
+	/*---------- Header ----------*/
+	&-header{
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+		grid-auto-rows: 60px;
+		&-logo{
+			grid-area: 1 / 1 / 2 / 2;
+		}
+		&-collapse{
+			&-item{
+				&:last-child{
+					display: none;
+				}
+			}
+		}
+		&-form{
+			grid-area: 2 / 3 / 3 / 5;
+			&-group{
+				&-prepend{
+					display: flex;
+					background: white;
+					justify-content: center;
+					align-items: center;
+					padding: 1em 1em;
+					border-radius: .25rem 0 0 .25rem;
+					span{
+						color: #5c5a59;
+						font-size: 1.5rem;
+					}
+				}
+				&-input{
+					border: none;
+					padding: 1em 2em 1em 1em 0;
+					font-family: var(--FuenteP);
+					&:focus{
+						border: none;
+						box-shadow: none;
+
+					}
+				}
+			}
+		}
+		&-collapse{
+			grid-area: 1 / 3 / 2 / 6;
+			justify-content: flex-end;
+			&-item{
+				grid-area: 2 / 5 / 3 / 6;
+				&-carrito{
+					display: flex;
+					border-radius: .25rem;
+					overflow: hidden;
+					margin: 0 0 0 1em;
+					font-size: 1.5rem;
+				}
+				&-cero{
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 0 .25rem .25rem 0;
+				}
+			}
+		}
+	}
+}
