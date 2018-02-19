@@ -140,3 +140,55 @@ body{
 		}
 	}
 }
+.Opiniones{
+	padding: 3em 4em;
+	&-title{
+		font-family: var(--FuenteS);
+		color: var(--colorText);
+	}
+	&-comentarios{
+		margin-top: 4em;
+		&-item{
+			display: grid;
+			grid-template-columns: 1fr 4fr 2fr;
+			grid-auto-rows: 1fr;
+			margin-bottom: 3em;
+			&-logo{
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: var(--FuenteS);
+				color: white;
+				font-size: 2rem;
+				width: 80%;
+
+			}
+			&-estructura{
+				&-nombre{
+					font-family: var(--FuenteS);
+					color: var(--colorText);
+					font-weight: 600;
+				}
+				&-comentario{
+					font-family: var(--FuenteP);
+					color: var(--colorText);
+				}
+				.estrellas{
+					color: var(--colorText);
+				}
+				
+			}
+			&:first-child{
+				.Opiniones-comentarios-item-logo{
+					background: #a2a6e0;
+
+				}
+			}
+			.ulti{
+				background: #f8cb00;
+				width: 80%;
+			}
+		}
+	}
+}
