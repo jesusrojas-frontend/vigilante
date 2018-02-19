@@ -1,0 +1,17 @@
+@import './estilos.css';
+@import './productos.css';
+.VigilanteHero{
+	&-header{
+		grid-template-columns: 1fr 1fr 1fr 1fr 14%;
+		&-form{
+			grid-area: 1 / 2 / 2 / 4;
+		}
+		&-collapse{
+			grid-area: 1 / 5 / 2 / 6;
+			&-item{
+				grid-area: 1 / 4 / 2 / 5;
+			}
+		}
+
+	}
+}
