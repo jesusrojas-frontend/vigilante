@@ -51,15 +51,15 @@ body
 			img(src="img/camara1.png", alt="camara").Item-producto-imagen
 		.Item-header
 			h1.Item-header-title Cámara Integrada
-			span.far.fa-heart
-			x-estrellas.estrellas
+			span.far.fa-heart.Item-header-corazon
+			x-estrellas.Item-header-estrellas
 		.Item-body
 			h3.Item-body-renta!= "Renta <span>50.000 Bsf</span>"
 			h4.Item-body-compra!= "Comprar <span>100.000 Bsf</span>"
-			p.Item-body-descripcion!= "Cámara Integrada Día / noche <br> <b>Sensor de Imagen:</b> 1/3' SONY EFFIO color CCD <br> <b>Resolución Mínima:</b> 0 LUX/F1.2 (IR open) 42 IR leds. <br> <b>Lente:</b> 2.8-12mm Vorifocal auto iris, infrarrojo <br> <b>Distancia IR: 15-25m/L." 
-			.Item-footer
-				a(href="#").Item-footer-btn Añadir al Carro
-				a(href="#").Item-footer-btn Comprar Ahora
+			p.Item-body-descripcion!= "Cámara Integrada Día / noche <br> <b>Sensor de Imagen:</b> 1/3' SONY EFFIO color CCD <br> <b>Resolución Mínima:</b> 0 LUX/F1.2 (IR open) 42 IR leds. <br> <b>Lente:</b> 2.8-12mm Vorifocal auto iris, infrarrojo <br> <b>Distancia IR:</b> 15-25m/L." 
+		.Item-footer
+			a(href="#").Item-footer-btn Añadir al Carro
+			a(href="#").Item-footer-btn Comprar Ahora
 	section.Relacionados
 		h2.Relacionados-title Productos Relacionados
 		.Productos-comprar
