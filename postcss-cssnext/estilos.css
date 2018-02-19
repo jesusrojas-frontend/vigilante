@@ -79,6 +79,9 @@ font-family: 'Rajdhani', sans-serif;*/
 .btn{
 	display: grid;
 	padding: 0;
+	font-family: var(--FuenteS);
+	text-transform: uppercase;
+	font-weight: 600;
 	&-back{
 		padding: .9em .8rem;
 		transition: .3s;
