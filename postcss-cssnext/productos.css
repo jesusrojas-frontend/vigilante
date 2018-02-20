@@ -180,10 +180,11 @@
 }
 @media screen and (max-width: 1024px){
 	.Productos{
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(4,1fr);
 		&-categoria{
-			grid-area: 1 / 2 / 4 / 1;
+			grid-area: 1 / 2 / 5 / 1;
 			width: 100%;
+			margin-top: 0;
 			&-item{
 				&-title{
 					font-size: 1.2rem;
@@ -195,6 +196,17 @@
 
 					}
 				}
+			}
+		}
+		&-comprar{
+			grid-area: 1 / 2 / 6 / 5;
+			grid-template-columns: repeat(3,1fr);
+			grid-template-rows: 50px 50px 1fr 1fr 1fr;
+			&-title{
+				grid-area: 1 / 1 / 2 / 4;
+			}
+			&-categoria{
+				grid-area: 2 / 1 / 3 / 4;
 			}
 		}
 	}
