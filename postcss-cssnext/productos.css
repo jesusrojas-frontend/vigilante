@@ -203,12 +203,14 @@
 				grid-area: 1 / 5 / 2 / 6;
 				&-item{
 					grid-area: 1 / 4 / 2 / 5;
-
+					
 					&:first-child,&:nth-child(2){
 						display: none;
 					}
 					&-carrito{
 						margin: 0;
+						overflow: visible;
+
 					}
 					&-carrito,&-cero{
 						font-size: 1rem;
@@ -255,6 +257,28 @@
 	}
 }
 @media screen and (max-width: 500px){
+	.VigilanteHero{
+		&-header{
+			grid-template-columns: repeat(3,1fr);
+			&-logo{
+				grid-area: 1 / 1 / 2 / 3;
+			}
+			&-collapse{
+				&-item{
+					grid-area: 1 / 3 / 2 / 5;
+					&:nth-child(3){
+						display: none;
+					}
+					&:last-child{
+						display: block;
+					}
+				}
+			}
+			&-form{
+				display: none;
+			}
+		}
+	}
 	.Productos{
 		grid-template-columns: 1fr;
 		padding: 3em 2em;
