@@ -254,3 +254,26 @@
 		}
 	}
 }
+@media screen and (max-width: 500px){
+	.Productos{
+		grid-template-columns: 1fr;
+		padding: 3em 2em;
+		&-categoria{
+			grid-area: 1 / 1 / 2 / 2;
+			height: 50%;
+			&-item{
+				display: none;
+			}
+		}
+		&-comprar{
+			grid-area: 2 / 1 / 18 / 2;
+			grid-template-columns: 1fr;
+			&-title{
+				grid-area: 1 / 1 / 2 / 2;
+			}
+			&-categoria{
+				grid-area: 2 / 1 / 3 / 2;
+			}
+		}
+	}
+}
