@@ -178,3 +178,24 @@
 		}
 	}
 }
+@media screen and (max-width: 1024px){
+	.Productos{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		&-categoria{
+			grid-area: 1 / 2 / 4 / 1;
+			width: 100%;
+			&-item{
+				&-title{
+					font-size: 1.2rem;
+				}
+				&-lista{
+					padding: .2em .5em;
+					a{
+						font-size: .8rem;
+
+					}
+				}
+			}
+		}
+	}
+}
