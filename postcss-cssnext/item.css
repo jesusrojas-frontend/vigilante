@@ -192,3 +192,27 @@ body{
 		}
 	}
 }
+@media screen and (max-width: 1024px){
+	.Item{
+		grid-auto-rows: 140px;
+		padding: 7em 4em 2em 4em;
+		&-footer{
+			&-btn{
+				font-size: .8rem;
+			}
+		}
+	}
+	.Relacionados{
+		display: none;
+	}
+	.Opiniones{
+		padding: 1em 4em;
+		&-comentarios{
+			&-item{
+				&-logo{
+					height: 50%;
+				}
+			}
+		}
+	}
+}
