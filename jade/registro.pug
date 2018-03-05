@@ -3,7 +3,7 @@ html(lang="es")
 head
 	meta(charset="UTF-8")
 	title Registro
-	//<link href="https://fonts.googleapis.com/css?family=Muli:400,600|Rajdhani:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,600|Rajdhani:400,600,700" rel="stylesheet">
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 	link(rel="stylesheet", href="css/normalize.css")
 	link(rel="stylesheet", href="css/bootstrap.min.css")
@@ -40,39 +40,41 @@ body
 					li.VigilanteHero-header-navbar-menu-item
 						a(href="#") Contacto
 	section.Registro
-		.Registro-iniciar
-			.Registro-iniciar-header
-				i.fa.fa-user
-			.Registro-iniciar-body
-				h2.Registro-iniciar-body-title Ya estoy registrado
-				p.Registro-iniciar-body-parrafo Si ya estar registrado entonces inicia seción
-			.Registro-iniciar-footer
-				i.fa.fa-angle-left
-		form.Registro-form
-			.Registro-form-item
-				.Registro-form-item-descripciones
-					label.Registro-form-item-descripciones-descipcion Nombre
-				.Registro-form-item-entrada
-					input(type="text" placeholder="Nombre Apellido").Registro-form-item-entrada-item
-			
-			.Registro-form-item
-				.Registro-form-item-descripciones
-					label.Registro-form-item-descripciones-descipcion Nacimiento
-				.Registro-form-item-entrada
-					input(type="date" placeholder="00/00/0000").Registro-form-item-entrada-item
-			
-			.Registro-form-item
-				.Registro-form-item-descripciones
-					label.Registro-form-item-descripciones-descipcion Email
-				.Registro-form-item-entrada
-					input(type="Email" placeholder="nombre@gmail.com").Registro-form-item-entrada-item
-			
-			.Registro-form-item
-				.Registro-form-item-descripciones
-					label.Registro-form-item-descripciones-descipcion Nombre
-				.Registro-form-item-entrada
-					input(type="password" placeholder="*********").Registro-form-item-entrada-item
-			button(type="submit").Registro-form-boton Registrarse
+		.Registro-contenedor
+			a(href="#").Registro-iniciar
+				.Registro-iniciar-header
+					i.fa.fa-user
+				.Registro-iniciar-body
+					h2.Registro-iniciar-body-title Ya estoy registrado
+					p.Registro-iniciar-body-parrafo Si ya estar registrado entonces inicia seción
+				.Registro-iniciar-footer
+					i.fa.fa-angle-left
+			form.Registro-form
+				.Registro-form-item
+					.Registro-form-item-descripciones
+						label.Registro-form-item-descripciones-descipcion Nombre
+					.Registro-form-item-entrada
+						input(type="text" placeholder="Nombre Apellido").form-control.Registro-form-item-entrada-input
+				
+				.Registro-form-item
+					.Registro-form-item-descripciones
+						label.Registro-form-item-descripciones-descipcion Nacimiento
+					.Registro-form-item-entrada
+						input(type="date" placeholder="00/00/0000").form-control.Registro-form-item-entrada-input
+				
+				.Registro-form-item
+					.Registro-form-item-descripciones
+						label.Registro-form-item-descripciones-descipcion Email
+					.Registro-form-item-entrada
+						input(type="Email" placeholder="nombre@gmail.com").form-control.Registro-form-item-entrada-input
+				
+				.Registro-form-item
+					.Registro-form-item-descripciones
+						label.Registro-form-item-descripciones-descipcion Nombre
+					.Registro-form-item-entrada
+						input(type="password" placeholder="*********").form-control.Registro-form-item-entrada-input
+				.Registro-form-boton
+					button(type="submit").Registro-form-boton-btn Registrarse
 	footer.VigilanteFooter
 		.VigilanteFooter-grid
 			.VigilanteFooter-grid-column
