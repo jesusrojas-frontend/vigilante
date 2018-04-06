@@ -1,0 +1,112 @@
+@import './estilos.css';
+:root{
+	--FuenteP: 'Muli', sans-serif;
+	--FuenteS: 'Rajdhani', sans-serif;
+
+	--shadow: #4c4c4c;
+	--colorTitle: #272c32;
+	--colorText: #686b70;
+	--shadow: #4c4c4c;
+	--borde: #e3eaed;
+	--azul: #1768d4;
+	--verde: #60e6c5;
+	--inputs: #f5f8f8;
+	--morado: #f9904c;
+	--anaranjado: #9c6be8;
+}
+body{
+	background: var(--blogBack);
+}
+@custom-media --mobile (width <= 500px);
+@custom-media --tablet (width <= 768px);
+.Inicio{
+	display: grid;
+	justify-items: center;
+	padding: 3em 0;
+	&-container{
+		width: 80%;
+		background: white;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border-radius: 1rem;
+		box-shadow: 3px 5px 20px 3px var(--shadow);
+		overflow: hidden;
+		@media (--tablet){
+			grid-template-columns: 1fr;
+		}
+		&-formulario{
+			padding: 3em 4em;
+			@media (--mobile){
+				padding: 3em 2em;
+			}
+			&-title{
+				font-family: var(--FuenteS);
+				font-weight: bold;
+				color: var(--colorTitle);
+			}
+			&-registrar{
+				font-family: var(--FuenteP);
+				color: var(--colorText);
+				a{
+					color: var(--verde);
+				}
+			}
+			&-form{
+				&-input{
+					color: var(--colorText);
+					border: none;
+					border-bottom: 1px solid color(var(--colorText) a(50%));
+					border-radius: 0;
+					box-shadow: none;
+					font-size: 1.5rem;
+					font-family: var(--FuenteP);
+					margin-bottom: 1em;
+					&:focus{
+						box-shadow: none;
+						border-bottom-color: var(--azul);
+					}
+				}
+				&-olvide{
+					color: var(--verde);
+					display: block;
+					&:hover{
+						color: var(--verde);
+					}
+				}
+				&-btn{
+					margin-top: 1em;
+					background: var(--azul);
+					border-radius: 5rem;
+					border: none;
+					color: white;
+					padding: .5em 1em;
+					font-size: 1.2rem;
+					box-shadow: 2px 5px 20px 0px var(--azul);
+					font-family: var(--FuenteP);
+					cursor: pointer;
+				}
+			}
+		}
+		&-bienvenido{
+			background-image: url('../img/fondo-inicio.jpg');
+			background-size: cover;
+			@media (--tablet){
+				display: none;
+			}
+			&-container{
+				height: 100%;
+				padding: 3em 2em;
+				text-align: center;
+				background: linear-gradient(to left, color(var(--morado) a(70%)) , color(var(--anaranjado) a(70%)));
+				&-title{
+					color: white;
+					font-family: var(--FuenteP);
+				}
+				&-parrafo{
+					color: white;
+					font-family: var(--FuenteP);
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	title Registro
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,600|Rajdhani:400,600,700" rel="stylesheet">
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	link(rel="stylesheet", href="css/normalize.css")
+	link(rel="stylesheet", href="css/bootstrap.min.css")
+	link(rel="stylesheet", href="css/inicio.css")
+body
+	section.VigilanteHero
+		header.VigilanteHero-header
+			a(href="index.html").VigilanteHero-header-logo
+				figure.VigilanteHero-header-logo-imagen
+					img(src="img/logo.png", alt="logo")
+				h1.VigilanteHero-header-logo-titulo Vigilante
+			ul.VigilanteHero-header-collapse
+				li.VigilanteHero-header-collapse-item
+					a(href="inicio.html") Inicia Sesión
+				li.VigilanteHero-header-collapse-item
+					.VigilanteHero-header-collapse-item-carro
+						span.fas.fa-shopping-cart
+						span Carro
+					.VigilanteHero-header-collapse-item-cero
+						span 0
+				li.VigilanteHero-header-collapse-item
+					span.fa.fa-bars#burguer
+			navbar.VigilanteHero-header-navbar#menu
+				span.fa.fa-times.VigilanteHero-header-navbar-close#close
+				ul.VigilanteHero-header-navbar-menu
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="inicio.html") Iniciar Sesión
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="registro.html") Registrarse
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="productos.html") Productos
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="#") Quienes Somos
+					li.VigilanteHero-header-navbar-menu-item
+						a(href="#") Contacto
+	section.Inicio
+		.Inicio-container
+			.Inicio-container-formulario
+				h2.Inicio-container-formulario-title Iniciar Sesión
+				p.Inicio-container-formulario-registrar!= "¿No tienes una cuenta? <a href='#'>Registrate</a>, te tomara menos de un minuto"
+				.Inicio-container-formulario-form
+					input(type="text" placeholder="Usuario").form-control.Inicio-container-formulario-form-input
+					input(type="password" placeholder="Contraseña").form-control.Inicio-container-formulario-form-input
+					a(href="#").Inicio-container-formulario-form-olvide ¿Olvidé la contraseña?
+					button(type="submit").Inicio-container-formulario-form-btn Iniciar Sesión
+			.Inicio-container-bienvenido
+				.Inicio-container-bienvenido-container
+					h2.Inicio-container-bienvenido-container-title Bienvenido
+					p.Inicio-container-bienvenido-container-parrafo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nihil, architecto beatae perferendis hic minus, necessitatibus suscipit sint iure iste at nobis, mollitia libero quaerat dignissimos molestias ad adipisci dicta.
+	footer.VigilanteFooter
+		.VigilanteFooter-grid
+			.VigilanteFooter-grid-column
+				.VigilanteFooter-grid-column-container
+					h2.VigilanteFooter-grid-column-title Categorias
+					ul.VigilanteFooter-grid-column-list
+						li.VigilanteFooter-grid-column-list-item
+							a(href="item.html") Camaras Fijas
+						li.VigilanteFooter-grid-column-list-item
+							a(href="item.html") DVR
+						li.VigilanteFooter-grid-column-list-item
+							a(href="item.html") Conectores
+						li.VigilanteFooter-grid-column-list-item
+							a(href="item.html") Calbes
+						li.VigilanteFooter-grid-column-list-item
+							a(href="item.html") Monitores
+			.VigilanteFooter-grid-column
+				.VigilanteFooter-grid-column-container
+					h2.VigilanteFooter-grid-column-title Tienda
+					ul.VigilanteFooter-grid-column-list
+						li.VigilanteFooter-grid-column-list-item
+							a(href="inicio.html") Iniciar Sesión
+						li.VigilanteFooter-grid-column-list-item
+							a(href="registro.html") Registrarse
+						li.VigilanteFooter-grid-column-list-item
+							a(href="productos.html") Productos
+						li.VigilanteFooter-grid-column-list-item
+							a(href="#") Quienes Somos
+						li.VigilanteFooter-grid-column-list-item
+							a(href="#") Contacto
+			.VigilanteFooter-grid-column
+				.VigilanteFooter-grid-column-container
+					h2.VigilanteFooter-grid-column-title Social
+					.VigilanteFooter-grid-column-logo
+						img(src="img/logo.png", alt="logo")
+						h3.VigilanteFooter-grid-column-logo-nombre Vigilante
+					ul.VigilanteFooter-grid-column-list
+						li.VigilanteFooter-grid-column-list-item
+							a(href="#")
+								span.fab.fa-facebook-f
+						li.VigilanteFooter-grid-column-list-item
+							a(href="#")
+								span.fab.fa-instagram
+						li.VigilanteFooter-grid-column-list-item
+							a(href="#")
+								span.fab.fa-twitter
+						li.VigilanteFooter-grid-column-list-item
+							a(href="#")
+								span.fab.fa-youtube
+		.VigilanteFooter-footer
+			span.VigilanteFooter-footer-item &copy; 2018 Vigilante. Todos los derechos reservados.
+			span.VigilanteFooter-footer-item!= "Diseño y Desarrollo por <a href='http://jesusrojas.com.ve' target='_blank'>Jesús Rojas</a>"
+	script(src="js/app.js")
