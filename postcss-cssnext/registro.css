@@ -43,6 +43,7 @@ body{
 		height: 80vh;
 		@media (--tablet){
 			grid-template-columns: 1fr;
+			height: auto;
 		}
 	}
 	&-iniciar{
@@ -106,6 +107,9 @@ body{
 			grid-template-columns: 2fr 7fr;
 			grid-gap: 20px;
 			align-items: center;
+			@media (--mobile){
+				grid-template-columns: 1fr;
+			}
 			&-descripciones{
 				&-descipcion{
 					color: var(--colorText);
