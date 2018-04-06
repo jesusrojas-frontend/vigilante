@@ -25,6 +25,9 @@
 body{
 	background: var(--blogBack);
 }
+@custom-media --mobile (width <= 500px);
+@custom-media --tablet (width <= 768px);
+
 .Registro{
 	display: grid;
 	justify-items: center;
@@ -38,6 +41,9 @@ body{
 		overflow: hidden;
 		box-shadow: 3px 5px 20px 3px var(--shadow);
 		height: 80vh;
+		@media (--tablet){
+			grid-template-columns: 1fr;
+		}
 	}
 	&-iniciar{
 		background: var(--amarillo);
@@ -48,6 +54,10 @@ body{
 		grid-gap: 50px;
 		&:hover{
 			text-decoration: none;
+		}
+		@media (--tablet){
+			grid-gap: 0;
+			padding: 1em;
 		}
 		&-header{
 
@@ -86,6 +96,10 @@ body{
 		display: grid;
 		justify-content: center;
 		padding: 4em 0;
+		@media (--tablet){
+			grid-row: 1;
+			grid-gap: 20px;
+		}
 		&-item{
 			display: grid;
 			justify-content: center;
