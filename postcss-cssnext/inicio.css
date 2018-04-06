@@ -17,6 +17,8 @@
 body{
 	background: var(--blogBack);
 }
+@custom-media --mobile (width <= 500px);
+@custom-media --tablet (width <= 768px);
 .Inicio{
 	display: grid;
 	justify-items: center;
@@ -29,8 +31,14 @@ body{
 		border-radius: 1rem;
 		box-shadow: 3px 5px 20px 3px var(--shadow);
 		overflow: hidden;
+		@media (--tablet){
+			grid-template-columns: 1fr;
+		}
 		&-formulario{
 			padding: 3em 4em;
+			@media (--mobile){
+				padding: 3em 2em;
+			}
 			&-title{
 				font-family: var(--FuenteS);
 				font-weight: bold;
@@ -82,6 +90,9 @@ body{
 		&-bienvenido{
 			background-image: url('../img/fondo-inicio.jpg');
 			background-size: cover;
+			@media (--tablet){
+				display: none;
+			}
 			&-container{
 				height: 100%;
 				padding: 3em 2em;
