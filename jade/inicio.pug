@@ -7,7 +7,7 @@ head
 	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
 	link(rel="stylesheet", href="css/normalize.css")
 	link(rel="stylesheet", href="css/bootstrap.min.css")
-	link(rel="stylesheet", href="css/registro.css")
+	link(rel="stylesheet", href="css/inicio.css")
 body
 	section.VigilanteHero
 		header.VigilanteHero-header
@@ -45,13 +45,14 @@ body
 				h2.Inicio-container-formulario-title Iniciar Sesión
 				p.Inicio-container-formulario-registrar!= "¿No tienes una cuenta? <a href='#'>Registrate</a>, te tomara menos de un minuto"
 				.Inicio-container-formulario-form
-					input(type="text" placeholder="Nombre Apellido").form-control.Inicio-container-formulario-form-input
-					input(type="password" placeholder="*********").form-control.Inicio-container-formulario-form-input
+					input(type="text" placeholder="Usuario").form-control.Inicio-container-formulario-form-input
+					input(type="password" placeholder="Contraseña").form-control.Inicio-container-formulario-form-input
 					a(href="#").Inicio-container-formulario-form-olvide ¿Olvidé la contraseña?
 					button(type="submit").Inicio-container-formulario-form-btn Iniciar Sesión
 			.Inicio-container-bienvenido
-				h2.Inicio-container-bienvenido-title Bienvenido
-				p.Inicio-container-bienvenido-parrafo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nihil, architecto beatae perferendis hic minus, necessitatibus suscipit sint iure iste at nobis, mollitia libero quaerat dignissimos molestias ad adipisci dicta.
+				.Inicio-container-bienvenido-container
+					h2.Inicio-container-bienvenido-container-title Bienvenido
+					p.Inicio-container-bienvenido-container-parrafo  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nihil, architecto beatae perferendis hic minus, necessitatibus suscipit sint iure iste at nobis, mollitia libero quaerat dignissimos molestias ad adipisci dicta.
 	footer.VigilanteFooter
 		.VigilanteFooter-grid
 			.VigilanteFooter-grid-column
